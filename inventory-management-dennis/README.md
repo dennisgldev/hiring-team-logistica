@@ -60,11 +60,10 @@ Welcome to the Inventory Management App! This project aims to streamline invento
 
 To get started with the project, follow these steps:
 
-1. **Clone Repository**: Clone this repository to your local machine by running the following command in your terminal:
+1. **Clone Repository**: Clone this repository to your local machine by running the following command in your terminal (This command will clone the main repository along with the Laradock submodule.):
 
    ```
-   git clone https://github.com/dennisgldev/hiring-team-logistica.git
-   git clone https://github.com/laradock/laradock.git
+   git clone -b development-test/dennis-gutierrez https://github.com/dennisgldev/hiring-team-logistica.git
    ```
 
 2. **Initialize Docker Engine**: Ensure Docker Engine is installed and initialized on your local machine.
