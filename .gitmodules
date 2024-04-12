@@ -1,0 +1,3 @@
+[submodule "inventory-management-dennis/laradock"]
+	path = inventory-management-dennis/laradock
+	url = https://github.com/Laradock/laradock.git
