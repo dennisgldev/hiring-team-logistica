@@ -68,23 +68,22 @@ To get started with the project, follow these steps:
 
 2. **Initialize Docker Engine**: Ensure Docker Engine is installed and initialized on your local machine.
 
-3. **Set Up Environment Variables**: Set up environment variables according to `.env.example` and `.env.example.laradock`. Copy these files to create `.env` and laradock `.env` files respectively. Run the following commands:
+3. **Set Up Environment Variables**: Navigate to the `hiring-team-logistica\inventory-management-dennis` directory and set up environment variables according to `.env.example` and `.env.example.laradock`. Copy these files to create `.env` and laradock `.env` files respectively. Run the following commands:
 
    ```
    copy .env.example .env
    copy .env.example.laradock laradock\.env
    ```
 
-4. **Start Laradock Services**: Navigate to the `laradock` directory within the project and start the Laradock services by executing the following command:
+4. **Start Laradock Services**: Navigate to the `hiring-team-logistica\inventory-management-dennis\laradock` directory within the project and start the Laradock services by executing the following command:
 
    ```
    docker-compose up -d nginx mysql phpmyadmin redis workspace
    ```
 
-5. **Install Dependencies**: Navigate back to the project directory and install the necessary dependencies by running:
+5. **Install Dependencies**: Navigate back to the project directory `hiring-team-logistica\inventory-management-dennis` and install the necessary dependencies by running:
 
    ```
-   cd ..
    npm install
    npm run dev
    ```
