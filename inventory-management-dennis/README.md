@@ -63,18 +63,25 @@ To get started with the project, follow these steps:
 1. **Clone Repository**: Clone this repository to your local machine by running the following command in your terminal (This command will clone the main repository along with the Laradock submodule.):
 
    ```
-   git clone -b development-test/dennis-gutierrez https://github.com/dennisgldev/hiring-team-logistica.git
+   git clone -b development-test/dennis-gutierrez --recurse-submodules https://github.com/dennisgldev/hiring-team-logistica.git
    ```
 
 2. **Initialize Docker Engine**: Ensure Docker Engine is installed and initialized on your local machine.
 
-3. **Start Laradock Services**: Navigate to the `laradock` directory within the project and start the Laradock services by executing the following command:
+3. **Set Up Environment Variables**: Set up environment variables according to `.env.example` and `.env.example.laradock`. Copy these files to create `.env` and laradock `.env` files respectively. Run the following commands:
+
+   ```
+   copy .env.example .env
+   copy .env.example.laradock laradock\.env
+   ```
+
+4. **Start Laradock Services**: Navigate to the `laradock` directory within the project and start the Laradock services by executing the following command:
 
    ```
    docker-compose up -d nginx mysql phpmyadmin redis workspace
    ```
 
-4. **Install Dependencies**: Navigate back to the project directory and install the necessary dependencies by running:
+5. **Install Dependencies**: Navigate back to the project directory and install the necessary dependencies by running:
 
    ```
    cd ..
@@ -82,9 +89,7 @@ To get started with the project, follow these steps:
    npm run dev
    ```
 
-5. **Access the Application**: You can now access the application by navigating to http://localhost in your web browser.
-
-**Note**: Set up environment variables according to .env.example. Please remember to use the .env.example file for the project in the main directory and .env.example.laradock for Laradock. Once you generate the .env file, copy it to the cloned Laradock folder.
+6. **Access the Application**: You can now access the application by navigating to http://localhost in your web browser.
 
 ## Test User Credentials
 
@@ -95,4 +100,4 @@ Use the following credentials to log in as a test user:
 
 ## Acknowledgements
 
-Thank you!
+Thank you CT Funiber!
