@@ -29,7 +29,9 @@ To get started with the project, follow these steps:
    docker-compose up -d nginx mysql phpmyadmin redis workspace
    ```
 
-5. **Install Dependencies**: Navigate back to the project directory `hiring-team-logistica\inventory-management-dennis` and install the necessary dependencies by running:
+5. **Install Dependencies**: Before running the application, make sure you have Node.js installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
+
+Once Node.js is installed, navigate back to the project directory `hiring-team-logistica\inventory-management-dennis` and install the necessary dependencies by running:
 
    ```
    npm install
@@ -40,13 +42,15 @@ To get started with the project, follow these steps:
 
 ## Importing the Database and Registering
 
-**Note**: If you wish to import the database, you can do so from the "Import" tab in phpMyAdmin. The file to import is located at `hiring-team-logistica\inventory-management-dennis\default_database_export_volume\default.sql`. The credentials to log in to the database are as follows:
+**Note**: If you wish to import the database, you can do so from the "Import" tab in phpMyAdmin. The file to import is located at `hiring-team-logistica\inventory-management-dennis\default_database_export\default.sql`. The credentials to log in to the database are as follows:
 
 - **Server**: mysql
 - **User**: default
 - **Password**: secret
 
-If you prefer to use volume persistence for your database, you can replace the mysql directory in `hiring-team-logistica\inventory-management-dennis\laradock\mysql` with the contents of the `hiring-team-logistica\inventory-management-dennis\default_database_export_volume\mysql` directory. This directory contains the MySQL data. By replacing the mysql directory with this one, you can ensure that your colleague's environment also has the same database data.
+If you don't want to import the database, you can register your own data.
+
+The container volume for laradock is located in the `hiring-team-logistica\inventory-management-dennis\laradock\mysql` folder.
 
 ## Test User Credentials
 
